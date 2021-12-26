@@ -10,7 +10,7 @@ pdfThemeDir = './docs/pdfTheme'
 inputFiles = [
         //[file: 'doctoolchain_demo.adoc',       formats: ['html','pdf']],
         //[file: 'arc42-template.adoc',    formats: ['html','pdf']],
-        [file: 'arc42/arc42.adoc', formats: ['html','pdf']],
+        [file: 'arc42/arc42.adoc', formats: ['html', 'pdf']],
         /** inputFiles **/
 ]
 
@@ -18,17 +18,17 @@ inputFiles = [
 //these will be copied as resources to ./images
 //folders are relative to inputPath
 imageDirs = [
-    'images/.',
-    /** imageDirs **/
+        'images/.',
+        /** imageDirs **/
 ]
 
 // these are directories (dirs) and files which Gradle monitors for a change
 // in order to decide if the docs have to be re-build
 taskInputsDirs = [
-                    "${inputPath}",
+        "${inputPath}",
 //                  "${inputPath}/src",
 //                  "${inputPath}/images",
-                 ]
+]
 
 taskInputsFiles = []
 
@@ -49,9 +49,9 @@ microsite.with {
     // is your microsite deployed with a context path?
     contextPath = '/'
     // used as title in the template
-    title='Microsite'
+    title = 'Microsite'
     // used in the template for absolute uris
-    host='https://localhost'
+    host = 'https://localhost'
     // configure a port on which your preview server will run
     previewPort = 8881
     // the folder of a site definition (theme) relative to the docDir+inputPath
@@ -166,7 +166,7 @@ confluence = [:]
 // only 'file' or 'url' is allowed. If both are given, 'url' is ignored
 confluence.with {
     input = [
-            [ file: "build/html5/arc42-template-de.html" ],
+            [file: "build/html5/arc42-template-de.html"],
     ]
 
     // endpoint of the confluenceAPI (REST) to be used
@@ -296,11 +296,11 @@ jira.with {
     // the label to restrict search to
     label =
 
-    // Legacy settings for Jira query. This setting is deprecated & support for it will soon be completely removed. Please use JiraRequests settings
-    //jql = "project='%jiraProject%' AND labels='%jiraLabel%' ORDER BY priority DESC, duedate ASC"
+            // Legacy settings for Jira query. This setting is deprecated & support for it will soon be completely removed. Please use JiraRequests settings
+            //jql = "project='%jiraProject%' AND labels='%jiraLabel%' ORDER BY priority DESC, duedate ASC"
 
-    // Base filename in which Jira query results should be stored
-    resultsFilename = 'JiraTicketsContent'
+            // Base filename in which Jira query results should be stored
+            resultsFilename = 'JiraTicketsContent'
 
     saveAsciidoc = true // if true, asciidoc file will be created with *.adoc extension
     saveExcel = true // if true, Excel file will be created with *.xlsx extension
@@ -315,24 +315,26 @@ jira.with {
     i.e. customfield_10026:'Story Points' for Jira instance that has custom field with that name and will be saved in a coloumn named "Story Points"
     */
     requests = [
-        new JiraRequest(
-            filename:"File1_Done_issues",
-            jql:"project='%jiraProject%' AND status='Done' ORDER BY duedate ASC",
-            customfields: [customfield_10026:'Story Points']
-        ),
-        new JiraRequest(
-            filename:'CurrentSprint',
-            jql:"project='%jiraProject%' AND Sprint in openSprints() ORDER BY priority DESC, duedate ASC",
-            customfields: [customfield_10026:'Story Points']
-        ),
+            new JiraRequest(
+                    filename: "File1_Done_issues",
+                    jql: "project='%jiraProject%' AND status='Done' ORDER BY duedate ASC",
+                    customfields: [customfield_10026: 'Story Points']
+            ),
+            new JiraRequest(
+                    filename: 'CurrentSprint',
+                    jql: "project='%jiraProject%' AND Sprint in openSprints() ORDER BY priority DESC, duedate ASC",
+                    customfields: [customfield_10026: 'Story Points']
+            ),
     ]
 }
 
 @groovy.transform.Immutable
 class JiraRequest {
-    String filename  //filename (without extension) of the file in which JQL results will be saved. Extension will be determined automatically for Asciidoc or Excel file
+    String filename
+    //filename (without extension) of the file in which JQL results will be saved. Extension will be determined automatically for Asciidoc or Excel file
     String jql // Jira Query Language syntax
-    Map<String,String> customfields // map of customFieldId:displayName values for Jira fields which don't have default names, i.e. customfield_10026:StoryPoints
+    Map<String, String> customfields
+    // map of customFieldId:displayName values for Jira fields which don't have default names, i.e. customfield_10026:StoryPoints
 }
 //end::jiraConfig[]
 
@@ -356,19 +358,23 @@ openApi.with {
 // This feature requires at least Jira API & credentials to be properly set in Jira section of this configuration
 sprintChangelog = [:]
 sprintChangelog.with {
-    sprintState = 'closed' // it is possible to define multiple states, i.e. 'closed, active, future'
-    ticketStatus = "Done, Closed" // it is possible to define multiple ticket statuses, i.e. "Done, Closed, 'in Progress'"
+    sprintState = 'closed'
+    // it is possible to define multiple states, i.e. 'closed, active, future'
+    ticketStatus = "Done, Closed"
+    // it is possible to define multiple ticket statuses, i.e. "Done, Closed, 'in Progress'"
 
     showAssignee = false
     showTicketStatus = false
     showTicketType = true
-    sprintBoardId = 12345  // Jira instance probably have multiple boards; here it can be defined which board should be used
+    sprintBoardId = 12345
+    // Jira instance probably have multiple boards; here it can be defined which board should be used
 
     // Output folder for this task inside main outputPath
     resultsFolder = 'Sprints'
 
     // if sprintName is not defined or sprint with that name isn't found, release notes will be created on for all sprints that match sprint state configuration
-    sprintName = 'PRJ Sprint 1' // if sprint with a given sprintName is found, release notes will be created just for that sprint
+    sprintName = 'PRJ Sprint 1'
+    // if sprint with a given sprintName is found, release notes will be created just for that sprint
     allSprintsFilename = 'Sprints_Changelogs' // Extension will be automatically added.
 }
 //end::sprintChangelogConfig[]
