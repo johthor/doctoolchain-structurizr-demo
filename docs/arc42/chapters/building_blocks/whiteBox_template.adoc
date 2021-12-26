@@ -1,11 +1,11 @@
 === <Name white box>
 
+include::../_arc42help.adoc[tag=whitebox-template]
+
 _**<Overview Diagram>**_
 
 Motivation::
-
 _<text explanation>_
-
 
 Contained Building Blocks::
 _<Description of contained building block (black boxes)>_
@@ -13,26 +13,7 @@ _<Description of contained building block (black boxes)>_
 Important Interfaces::
 _<Description of important interfaces>_
 
-[role="arc42help"]
-****
-Insert your explanations of black boxes from level 1:
-
-If you use tabular form you will only describe your black boxes with name and
-responsibility according to the following schema:
-
-[cols="1,2" options="header"]
-|===
-| **Name** | **Responsibility**
-| _<black box 1>_ | _<Text>_
-| _<black box 2>_ | _<Text>_
-|===
-
-
-
-If you use a list of black box descriptions then you fill in a separate black box template for every important building block .
-Its headline is the name of the black box.
-****
-
+include::../_arc42help.adoc[tag=whitebox-template-details]
 
 include::blackBox_template.adoc[]
 
@@ -44,11 +25,10 @@ _<black box template>_
 
 _<black box template>_
 
-
 ==== <Name interface 1>
 
-...
+_<interface description>_
 
 ==== <Name interface m>
 
-
+_<interface description>_
