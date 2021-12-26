@@ -20,3 +20,4 @@ target/
 # Branch switching
 generated/
 .gradle
+build

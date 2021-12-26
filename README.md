@@ -52,12 +52,12 @@ Each of the java based applications is started with the `chaos-monkey` profile i
 
 You can then access petclinic here: http://localhost:8080/
 
-![Spring Petclinic Microservices screenshot](docs/application-screenshot.png)
+![Spring Petclinic Microservices screenshot](docs/images/application-screenshot.png)
 
 
 **Architecture diagram of the Spring Petclinic Microservices**
 
-![Spring Petclinic Microservices architecture](docs/microservices-architecture-diagram.jpg)
+![Spring Petclinic Microservices architecture](docs/images/microservices-architecture-diagram.jpg)
 
 
 ## In case you find a bug/suggested improvement for Spring Petclinic Microservices
@@ -102,7 +102,7 @@ have been instrumented with [MicroMeter](https://micrometer.io) to collect JVM a
 
 A JMeter load testing script is available to stress the application and generate metrics: [petclinic_test_plan.jmx](spring-petclinic-api-gateway/src/test/jmeter/petclinic_test_plan.jmx)
 
-![Grafana metrics dashboard](docs/grafana-custom-metrics-dashboard.png)
+![Grafana metrics dashboard](docs/images/grafana-custom-metrics-dashboard.png)
 
 ### Using Prometheus
 
