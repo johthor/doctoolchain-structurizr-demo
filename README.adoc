@@ -1,0 +1,27 @@
+= Demonstration of docToolchain and Structurizr based on the Spring PetClinic Sample Application built with Spring Cloud
+
+image:https://github.com/spring-petclinic/spring-petclinic-microservices/actions/workflows/maven-build.yml/badge.svg[Build Status,link=https://github.com/spring-petclinic/spring-petclinic-microservices/actions/workflows/maven-build.yml]
+image:https://img.shields.io/badge/License-Apache%202.0-blue.svg[License,link=https://opensource.org/licenses/Apache-2.0]
+
+The base project for this demonstration is the https://github.com/spring-petclinic/spring-petclinic-microservices/[spring-petclinic-microservices] project which is one of the https://spring-petclinic.github.io/docs/forks.html[several forks] hosted in a special GitHub org: https://github.com/spring-petclinic[spring-petclinic].
+
+This microservices branch was initially derived from https://github.com/spring-petclinic/spring-petclinic-angular1[AngularJS version] to demonstrate how to split sample Spring application into http://www.martinfowler.com/articles/microservices.html[microservices].
+
+== Used tools
+
+* http://doctoolchain.org/docToolchain/v2.0.x/index.html[docToolchain]
+* https://arc42.org/overview/[arc42 template]
+
+== Understanding the Spring Petclinic application
+
+http://fr.slideshare.net/AntoineRey/spring-framework-petclinic-sample-application[See the presentation of the Spring Petclinic Framework version]
+
+http://javaetmoi.com/2018/10/architecture-microservices-avec-spring-cloud/[A blog bost introducing the Spring Petclinic Microsevices] (french language)
+
+You can then access petclinic here: http://localhost:8080/
+
+.Screenshot of the Spring Petclinic Frontend
+image:docs/images/application-screenshot.png[Spring Petclinic Microservices screenshot]
+
+.Architecture diagram of the Spring Petclinic Microservices
+image:docs/images/microservices-architecture-diagram.jpg[Spring Petclinic Microservices architecture]
