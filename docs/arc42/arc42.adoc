@@ -1,31 +1,13 @@
-:imagesdir: ../images
-:jbake-menu: -
 // header file for arc42-template,
 // including all help texts
 //
 // ====================================
 
-= Spring Petclinic Microservice Architecture Documentation
+= Spring Pet-clinic Microservice Architecture Documentation
 // toc-title definition MUST follow document title without blank line!
 :toc-title: Table of Contents
-
-//additional style for arc42 help callouts
-ifdef::backend-html5[]
-++++
-<style>
-.arc42help {font-size:small; width: 14px; height: 16px; overflow: hidden; position: absolute; right: 0px; padding: 2px 0px 3px 2px;}
-.arc42help::before {content: "?";}
-.arc42help:hover {width:auto; height: auto; z-index: 100; padding: 10px;}
-.arc42help:hover::before {content: "";}
-@media print {
-	.arc42help {display:hidden;}
-}
-</style>
-++++
-endif::backend-html5[]
-
 // configure EN settings for asciidoc
-include::chapters/_config.adoc[]
+include::includes/config.adoc[]
 
 include::chapters/about-arc42.adoc[]
 

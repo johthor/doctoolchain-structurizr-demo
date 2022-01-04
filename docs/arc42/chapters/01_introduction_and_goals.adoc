@@ -5,25 +5,26 @@
 :jbake-order: 1
 :filename: /chapters/01_introduction_and_goals.adoc
 ifndef::imagesdir[:imagesdir: ../../images]
+ifndef::includesdir[:includesdir: ../includes]
 
 :toc:
 
 [[section-introduction-and-goals]]
 == Introduction and Goals
 
-include::_arc42help.adoc[tag=section-introduction-and-goals]
+include::{includesdir}/arc42help.adoc[tag=section-introduction-and-goals]
 
 === Requirements Overview
 
-include::_arc42help.adoc[tag=requirements-overview]
+include::{includesdir}/arc42help.adoc[tag=requirements-overview]
 
 === Quality Goals
 
-include::_arc42help.adoc[tag=quality-goals]
+include::{includesdir}/arc42help.adoc[tag=quality-goals]
 
 === Stakeholders
 
-include::_arc42help.adoc[tag=stakeholders]
+include::{includesdir}/arc42help.adoc[tag=stakeholders]
 
 [options="header",cols="1,2,2"]
 |===

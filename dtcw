@@ -43,7 +43,7 @@ java_help_and_die() {
     echo "one way to install or update java is to install"
     echo "sdkman and then java via sdkman"
     echo "https://sdkman.io/install"
-    echo "$ curl -s "https://get.sdkman.io" | bash"
+    echo "$ curl -s https://get.sdkman.io | bash"
     echo "$ sdk install java"
     echo ""
     echo "or you can download it from https://adoptium.net/"

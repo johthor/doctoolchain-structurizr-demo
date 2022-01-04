@@ -5,10 +5,11 @@
 :jbake-order: 11
 :filename: /chapters/11_technical_risks.adoc
 ifndef::imagesdir[:imagesdir: ../../images]
+ifndef::includesdir[:includesdir: ../includes]
 
 :toc:
 
 [[section-technical-risks]]
 == Risks and Technical Debts
 
-include::_arc42help.adoc[tag=section-technical-risks]
+include::{includesdir}/arc42help.adoc[tag=section-technical-risks]

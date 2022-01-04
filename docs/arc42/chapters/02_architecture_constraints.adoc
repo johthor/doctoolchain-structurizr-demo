@@ -5,10 +5,11 @@
 :jbake-order: 2
 :filename: /chapters/02_architecture_constraints.adoc
 ifndef::imagesdir[:imagesdir: ../../images]
+ifndef::includesdir[:includesdir: ../includes]
 
 :toc:
 
 [[section-architecture-constraints]]
 == Architecture Constraints
 
-include::_arc42help.adoc[tag=section-architecture-constraints]
+include::{includesdir}/arc42help.adoc[tag=section-architecture-constraints]

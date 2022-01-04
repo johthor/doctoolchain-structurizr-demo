@@ -5,13 +5,14 @@
 :jbake-order: 6
 :filename: /chapters/06_runtime_view.adoc
 ifndef::imagesdir[:imagesdir: ../../images]
+ifndef::includesdir[:includesdir: ../includes]
 
 :toc:
 
 [[section-runtime-view]]
 == Runtime View
 
-include::_arc42help.adoc[tag=section-runtime-view]
+include::{includesdir}/arc42help.adoc[tag=section-runtime-view]
 
 === <Runtime Scenario 1>
 

@@ -1,6 +1,6 @@
 ==== <Name black box>
 
-include::../_arc42help.adoc[tag=blackbox-template]
+include::{includesdir}/arc42help.adoc[tag=blackbox-template]
 
 _<Purpose/Responsibility>_
 

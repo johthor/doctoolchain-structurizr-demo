@@ -5,13 +5,14 @@
 :jbake-order: 12
 :filename: /chapters/12_glossary.adoc
 ifndef::imagesdir[:imagesdir: ../../images]
+ifndef::includesdir[:includesdir: ../includes]
 
 :toc:
 
 [[section-glossary]]
 == Glossary
 
-include::_arc42help.adoc[tag=section-glossary]
+include::{includesdir}/arc42help.adoc[tag=section-glossary]
 
 [cols="e,2e" options="header"]
 |===

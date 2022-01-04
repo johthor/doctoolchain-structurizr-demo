@@ -5,17 +5,18 @@
 :jbake-order: 7
 :filename: /chapters/07_deployment_view.adoc
 ifndef::imagesdir[:imagesdir: ../../images]
+ifndef::includesdir[:includesdir: ../includes]
 
 :toc:
 
 [[section-deployment-view]]
 == Deployment View
 
-include::_arc42help.adoc[tag=section-deployment-view]
+include::{includesdir}/arc42help.adoc[tag=section-deployment-view]
 
 === Infrastructure Level 1
 
-include::_arc42help.adoc[tag=deployment-view-level-1]
+include::{includesdir}/arc42help.adoc[tag=deployment-view-level-1]
 
 _**<Overview Diagram>**_
 

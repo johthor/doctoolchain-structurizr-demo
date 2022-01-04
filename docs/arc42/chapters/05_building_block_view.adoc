@@ -5,6 +5,7 @@
 :jbake-order: 5
 :filename: /chapters/05_building_block_view.adoc
 ifndef::imagesdir[:imagesdir: ../../images]
+ifndef::includesdir[:includesdir: ../includes]
 
 :toc:
 
@@ -13,15 +14,15 @@ ifndef::imagesdir[:imagesdir: ../../images]
 
 == Building Block View
 
-include::_arc42help.adoc[tag=section-building-block-view]
+include::{includesdir}/arc42help.adoc[tag=section-building-block-view]
 
 // === Level 1 Whitebox Overall System
 
-include::building_blocks/whiteBox_pet_clinic.adoc[]
+include::../building_blocks/whiteBox_pet_clinic.adoc[]
 
 === Level 2
 
-include::_arc42help.adoc[tag=building-block-view-level-2]
+include::{includesdir}/arc42help.adoc[tag=building-block-view-level-2]
 
 ==== White Box _<building block 1>_
 
@@ -37,7 +38,7 @@ _<white box template>_
 
 === Level 3
 
-include::_arc42help.adoc[tag=building-block-view-level-3]
+include::{includesdir}/arc42help.adoc[tag=building-block-view-level-3]
 
 ==== White Box <_building block x.1_>
 

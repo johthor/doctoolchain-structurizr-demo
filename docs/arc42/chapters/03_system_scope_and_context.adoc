@@ -5,17 +5,18 @@
 :jbake-order: 3
 :filename: /chapters/03_system_scope_and_context.adoc
 ifndef::imagesdir[:imagesdir: ../../images]
+ifndef::includesdir[:includesdir: ../includes]
 
 :toc:
 
 [[section-system-scope-and-context]]
 == System Scope and Context
 
-include::_arc42help.adoc[tag=section-system-scope-and-context]
+include::{includesdir}/arc42help.adoc[tag=section-system-scope-and-context]
 
 === Business Context
 
-include::_arc42help.adoc[tag=business-context]
+include::{includesdir}/arc42help.adoc[tag=business-context]
 
 **<Diagram or Table>**
 
@@ -23,7 +24,7 @@ include::_arc42help.adoc[tag=business-context]
 
 === Technical Context
 
-include::_arc42help.adoc[tag=technical-context]
+include::{includesdir}/arc42help.adoc[tag=technical-context]
 
 **<Diagram or Table>**
 

@@ -5,13 +5,14 @@
 :jbake-order: 8
 :filename: /chapters/08_concepts.adoc
 ifndef::imagesdir[:imagesdir: ../../images]
+ifndef::includesdir[:includesdir: ../includes]
 
 :toc:
 
 [[section-concepts]]
 == Cross-cutting Concepts
 
-include::_arc42help.adoc[tag=section-concepts]
+include::{includesdir}/arc42help.adoc[tag=section-concepts]
 
 === _<Concept 1>_
 

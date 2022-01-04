@@ -5,18 +5,19 @@
 :jbake-order: 10
 :filename: /chapters/10_quality_scenarios.adoc
 ifndef::imagesdir[:imagesdir: ../../images]
+ifndef::includesdir[:includesdir: ../includes]
 
 :toc:
 
 [[section-quality-scenarios]]
 == Quality Requirements
 
-include::_arc42help.adoc[tag=section-quality-scenarios]
+include::{includesdir}/arc42help.adoc[tag=section-quality-scenarios]
 
 === Quality Tree
 
-include::_arc42help.adoc[tag=quality-tree]
+include::{includesdir}/arc42help.adoc[tag=quality-tree]
 
 === Quality Scenarios
 
-include::_arc42help.adoc[tag=quality-scenarios]
+include::{includesdir}/arc42help.adoc[tag=quality-scenarios]

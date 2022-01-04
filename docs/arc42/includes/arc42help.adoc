@@ -1,3 +1,5 @@
+= arc42 documentation template usage instructions
+
 == Introduction and Goals
 
 // tag::section-introduction-and-goals[]

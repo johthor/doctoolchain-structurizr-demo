@@ -1,8 +1,8 @@
-=== <Name white box>
+=== Level 1 Whitebox Pet Clinic System
+include::{includesdir}/arc42help.adoc[tag=whitebox-template]
 
-include::../_arc42help.adoc[tag=whitebox-template]
-
-_**<Overview Diagram>**_
+.Preexisting architecture diagram
+image:microservices-architecture-diagram.jpg[]
 
 Motivation::
 _<text explanation>_
@@ -13,7 +13,7 @@ _<Description of contained building block (black boxes)>_
 Important Interfaces::
 _<Description of important interfaces>_
 
-include::../_arc42help.adoc[tag=whitebox-template-details]
+include::{includesdir}/arc42help.adoc[tag=whitebox-template-details]
 
 include::blackBox_template.adoc[]
 

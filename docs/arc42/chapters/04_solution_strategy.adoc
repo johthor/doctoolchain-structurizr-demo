@@ -5,10 +5,11 @@
 :jbake-order: 4
 :filename: /chapters/04_solution_strategy.adoc
 ifndef::imagesdir[:imagesdir: ../../images]
+ifndef::includesdir[:includesdir: ../includes]
 
 :toc:
 
 [[section-solution-strategy]]
 == Solution Strategy
 
-include::_arc42help.adoc[tag=section-solution-strategy]
+include::{includesdir}/arc42help.adoc[tag=section-solution-strategy]
